@@ -15,12 +15,12 @@ export const initializeCurrentProduct = createAction(
 
 export const loadProducts = createAction('[Product] Load');
 
-export const loadSuccess = createAction(
+export const loadProductsSuccess = createAction(
   '[Product] Load Success',
   props<{ products: Product[] }>()
 );
 
-export const loadFail = createAction(
+export const loadProductsFail = createAction(
   '[Product] Load Fail',
   props<{ error: string }>()
 );
